@@ -1,0 +1,28 @@
+.header {
+    @include flex(column, center, center, wrap);
+    // background-color: map-get($map: $colors, $key: back-color);
+    background-color: rgba(185, 185, 185, 0.4);
+    background-image: url(../../images/back_header.jpg);
+    background-size: cover;
+    background-blend-mode: lighten;
+    border-radius: 0px 80px;
+    border: .4rem solid map-get($map: $colors, $key: border-color);
+    padding: 1rem;
+    margin-top: 32px;
+    &_info {
+        color: map-get($map: $colors, $key: text-color);
+        text-align: center;
+        & h1{
+            @include font($text_accent, 2.4rem, 600, none);
+        }
+        & h2 {
+            @include font($text_base, 1.8rem, 500, none);
+            padding: .5rem;
+            & a {
+                color: map-get($map: $colors, $key: secondary-color);
+                font-style: italic;
+                text-decoration: underline;
+            }
+        }
+    }
+}

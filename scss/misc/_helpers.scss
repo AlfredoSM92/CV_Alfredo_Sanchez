@@ -1,0 +1,23 @@
+body {
+    background-color: rgba(187, 187, 187, 0.25);
+    background-image: url(../../images/back.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading{
+    @include font($text_accent, 2.2rem, 500, none);
+    text-align: center;
+    &::first-letter{
+        color: map-get($map: $colors, $key: accent-color);
+        text-decoration: underline
+    }
+}
+
+.info {
+    @include font($text_base, 1.8rem, 300, none);
+    text-align: justify;
+}

@@ -1,0 +1,14 @@
+@mixin flex ($dir, $ai, $jc, $wr) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: $ai;   
+    justify-content: $jc;
+    flex-wrap: wrap; 
+}
+
+@mixin font($ff, $fs, $fw, $td) {
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+    text-decoration: $td;
+}
