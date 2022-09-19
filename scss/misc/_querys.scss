@@ -1,0 +1,67 @@
+@media(max-width: 768px) {
+    .header{
+        max-width: 650px;
+        margin: 0 auto;
+        &_info {
+            h1, h2{
+                font-size: .8em;
+            }
+        }
+    }
+
+   .heading, .subtitle, .info, .navigation a{
+        font-size: .9em;
+    }
+    img{
+        max-width: 80px;
+    }
+    footer {
+        & .fa-brands, .fa-envelope {
+            font-size: 1.5rem;
+            margin-inline: 2rem;
+        }
+    }
+    
+
+}
+
+@media (max-width:375px) {
+    .navigation{
+        flex-direction: column;
+        & li{
+            margin-top: 1em;
+        }
+    }
+    
+    .about_info{
+        flex-direction: column-reverse;
+        justify-content: center;
+        & .p_info{
+            margin-right: 0px;
+        }
+        & img{
+            margin-bottom: 1em;
+            margin-left: 0px;
+        }
+    }
+
+    #competency{
+        flex-direction: column;
+        & .heading {
+            margin-top: 1.5em;
+            margin-bottom: .5em;
+        }
+    }
+
+    .heading {
+        margin-top: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    #education, #experience{
+        flex-direction: column;
+        & li {
+            margin-bottom: .8em;
+        }
+    }
+}

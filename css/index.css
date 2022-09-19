@@ -31,8 +31,19 @@ body {
   font-size: 2.2rem;
   font-weight: 500;
   text-decoration: none;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 1rem; }
   .heading::first-letter {
+    color: #ff3d2bee;
+    text-decoration: underline; }
+
+.subtitle {
+  font-family: "Sarabun", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center; }
+  .subtitle::first-letter {
     color: #ff3d2bee;
     text-decoration: underline; }
 
@@ -40,8 +51,20 @@ body {
   font-family: "Sarabun", sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  text-decoration: none;
-  text-align: justify; }
+  text-decoration: none; }
+
+.text_inline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+  max-width: 100vw;
+  text-align: center; }
+
+.contact_link {
+  color: #444444; }
 
 .header {
   display: flex;
@@ -54,7 +77,7 @@ body {
   background-size: cover;
   background-blend-mode: lighten;
   border-radius: 0px 80px;
-  border: 0.4rem solid #388582;
+  border: 0.4rem solid #388583a4;
   padding: 1rem;
   margin-top: 32px; }
   .header_info {
@@ -95,8 +118,8 @@ body {
       color: #444444; }
   .navigation li {
     padding: 1em;
-    background-color: #4f90ceb9;
-    border: 3px solid #388582;
+    background-color: #4f91ce85;
+    border: 3px solid #388583a4;
     border-radius: 10px; }
 
 .about_info {
@@ -107,7 +130,8 @@ body {
   flex-wrap: wrap; }
   .about_info .p_info {
     max-width: 60vw;
-    margin-right: 3rem; }
+    margin-right: 3rem;
+    text-align: justify; }
   .about_info img {
     max-height: 150px;
     margin-left: 3rem;
@@ -120,14 +144,93 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 5rem; }
-  #competency h3 {
-    margin-bottom: 1rem; }
   #competency li {
-    font-family: "Sarabun", sans-serif;
-    font-size: 1.8rem;
-    font-weight: 300;
-    text-decoration: none;
     text-align: right; }
     #competency li .fa-star {
       max-height: 18px;
       color: #ff3d2bee; }
+
+.formation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.experience_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .experience_section p, .experience_section pre {
+    max-width: 40vw; }
+
+.list_subtitle {
+  margin-bottom: 1rem; }
+
+#references {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+footer {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #4f91ce85;
+  border-width: .4rem .4rem 0 .4rem;
+  border-style: solid;
+  border-color: #388583a4;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center; }
+  footer .fa-brands, footer .fa-envelope {
+    font-size: 2.6rem;
+    color: #444444;
+    margin: 1rem; }
+
+@media (max-width: 768px) {
+  .header {
+    max-width: 650px;
+    margin: 0 auto; }
+    .header_info h1, .header_info h2 {
+      font-size: .8em; }
+  .heading, .subtitle, .info, .navigation a {
+    font-size: .9em; }
+  img {
+    max-width: 80px; }
+  footer .fa-brands, footer .fa-envelope {
+    font-size: 1.5rem;
+    margin-inline: 2rem; } }
+
+@media (max-width: 375px) {
+  .navigation {
+    flex-direction: column; }
+    .navigation li {
+      margin-top: 1em; }
+  .about_info {
+    flex-direction: column-reverse;
+    justify-content: center; }
+    .about_info .p_info {
+      margin-right: 0px; }
+    .about_info img {
+      margin-bottom: 1em;
+      margin-left: 0px; }
+  #competency {
+    flex-direction: column; }
+    #competency .heading {
+      margin-top: 1.5em;
+      margin-bottom: .5em; }
+  .heading {
+    margin-top: 2rem;
+    margin-bottom: .5rem; }
+  #education, #experience {
+    flex-direction: column; }
+    #education li, #experience li {
+      margin-bottom: .8em; } }

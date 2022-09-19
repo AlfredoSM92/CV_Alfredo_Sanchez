@@ -11,13 +11,33 @@ body {
 .heading{
     @include font($text_accent, 2.2rem, 500, none);
     text-align: center;
+    margin-bottom: 1rem;
     &::first-letter{
         color: map-get($map: $colors, $key: accent-color);
         text-decoration: underline
     }
 }
 
+.subtitle{
+    @include font($text_base, 1.8rem, 600, none);
+    text-align: center;
+    &::first-letter{
+        color: map-get($map: $colors, $key: accent-color);
+        text-decoration: underline;
+    }
+}
+
 .info {
     @include font($text_base, 1.8rem, 300, none);
-    text-align: justify;
+}
+
+.text_inline {
+    @include flex(column, center, center, wrap);
+        margin-bottom: 1.2rem;
+        max-width: 100vw;
+        text-align: center;
+}
+
+.contact_link {
+    color:map-get($map: $colors, $key: secondary-color);
 }
