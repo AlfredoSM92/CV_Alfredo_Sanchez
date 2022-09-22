@@ -209,7 +209,7 @@ footer {
     flex-direction: column-reverse; }
     .about_info .p_info {
       margin-right: 0;
-      width: 100vw; }
+      min-width: 80vw; }
     .about_info img {
       max-width: 120px;
       margin-bottom: 1em;
