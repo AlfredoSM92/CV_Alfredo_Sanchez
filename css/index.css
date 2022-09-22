@@ -32,7 +32,7 @@ body {
   font-weight: 500;
   text-decoration: none;
   text-align: center;
-  margin-bottom: 1rem; }
+  margin: 1.5rem 0; }
   .heading::first-letter {
     color: #ff3d2bee;
     text-decoration: underline; }
@@ -65,6 +65,9 @@ body {
 
 .contact_link {
   color: #444444; }
+
+.break_line {
+  margin: 1.5rem 0; }
 
 .header {
   display: flex;
@@ -129,7 +132,7 @@ body {
   justify-content: center;
   flex-wrap: wrap; }
   .about_info .p_info {
-    max-width: 60vw;
+    max-width: 50vw;
     margin-right: 3rem;
     text-align: justify; }
   .about_info img {
@@ -143,7 +146,7 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 5rem; }
+  margin: 2rem 0; }
   #competency li {
     text-align: right; }
     #competency li .fa-star {
@@ -155,7 +158,8 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem; }
 
 .experience_section {
   display: flex;
@@ -209,7 +213,7 @@ footer {
     font-size: 1.5rem;
     margin-inline: 2rem; } }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .navigation {
     flex-direction: column; }
     .navigation li {

@@ -11,7 +11,7 @@ body {
 .heading{
     @include font($text_accent, 2.2rem, 500, none);
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 1.5rem 0;
     &::first-letter{
         color: map-get($map: $colors, $key: accent-color);
         text-decoration: underline
@@ -40,4 +40,8 @@ body {
 
 .contact_link {
     color:map-get($map: $colors, $key: secondary-color);
+}
+
+.break_line {
+    margin: 1.5rem 0;
 }
