@@ -199,31 +199,19 @@ footer {
     color: #444444;
     margin: 1rem; }
 
-@media (max-width: 768px) {
-  .header {
-    max-width: 650px;
-    margin: 0 auto; }
-    .header_info h1, .header_info h2 {
-      font-size: .8em; }
-  .heading, .subtitle, .info, .navigation a {
-    font-size: .9em; }
-  img {
-    max-width: 80px; }
-  footer .fa-brands, footer .fa-envelope {
-    font-size: 1.5rem;
-    margin-inline: 2rem; } }
-
-@media (max-width: 425px) {
+@media (max-width: 720px) {
   .navigation {
+    margin: 2rem 0;
     flex-direction: column; }
     .navigation li {
-      margin-top: 1em; }
+      margin-top: 2em; }
   .about_info {
-    flex-direction: column-reverse;
-    justify-content: center; }
+    flex-direction: column-reverse; }
     .about_info .p_info {
-      margin-right: 0px; }
+      margin-right: 0;
+      width: 100vw; }
     .about_info img {
+      max-width: 120px;
       margin-bottom: 1em;
       margin-left: 0px; }
   #competency {
@@ -234,7 +222,19 @@ footer {
   .heading {
     margin-top: 2rem;
     margin-bottom: .5rem; }
-  #education, #experience {
+  #education, #experience, #references {
     flex-direction: column; }
-    #education li, #experience li {
-      margin-bottom: .8em; } }
+    #education li, #experience li, #references li {
+      margin-bottom: 3rem; } }
+
+@media (max-width: 375px) {
+  .header_info h1 {
+    font-size: 1.6em; }
+  .header_info h2 {
+    font-size: 1.4em; }
+  .navigation li a {
+    font-size: 1.4em; }
+  .heading {
+    font-size: 1.6em; }
+  .info, a, .subtitle {
+    font-size: 1.4em; } }
