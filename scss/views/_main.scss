@@ -72,3 +72,6 @@
     @include flex(row, center, space-around, wrap);
 }
 
+#references a{
+    text-decoration: underline;
+}

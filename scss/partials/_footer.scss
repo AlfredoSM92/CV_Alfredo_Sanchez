@@ -2,7 +2,7 @@
 footer{
     margin-top: 1.5rem;
     @include flex(column, center, center, wrap);
-    background-color: map-get($map: $colors, $key: back-color);
+    // background-color: map-get($map: $colors, $key: back-color);
     border-width: .4rem .4rem 0 .4rem;
     border-style: solid;
     border-color: map-get($map: $colors, $key: border-color);
@@ -14,4 +14,20 @@ footer{
         color: map-get($map: $colors, $key: secondary-color);
         margin: 1rem;
     }
+}
+
+.fa-square-whatsapp:hover{
+    color: green;
+}
+
+.fa-linkedin:hover{
+    color: #0077b5
+}
+
+.fa-mail:hover {
+    color: rgb(216, 206, 67);
+}
+
+.fa-github:hover {
+    color: black;
 }
