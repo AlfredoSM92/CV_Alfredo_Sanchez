@@ -1,6 +1,5 @@
 .header {
     @include flex(column, center, center, wrap);
-    // background-color: map-get($map: $colors, $key: back-color);
     background-color: rgba(185, 185, 185, 0.4);
     background-image: url(../../images/back_header.jpg);
     background-size: cover;
@@ -23,6 +22,10 @@
                 font-style: italic;
                 text-decoration: underline;
             }
+        }
+        & img {
+            border-radius: 80px;
+            box-shadow: 0 0 10px 5px whitesmoke;
         }
     }
 }
