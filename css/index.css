@@ -195,28 +195,34 @@ footer {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #4f91ce85;
   border-width: .4rem .4rem 0 .4rem;
   border-style: solid;
   border-color: #388583a4;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   padding: 1rem;
   text-align: center; }
-  footer .fa-brands, footer .fa-envelope {
+  footer .fa-brands {
     font-size: 2.6rem;
     color: #444444;
-    margin: 1rem; }
+    margin-right: 2rem; }
+
+.fa-envelope {
+  width: 2.6rem;
+  filter: grayscale(100);
+  margin-top: 1rem; }
+
+.fa-envelope:hover {
+  filter: grayscale(0); }
 
 .fa-square-whatsapp:hover {
-  color: green; }
+  color: #02a802; }
 
 .fa-linkedin:hover {
   color: #0077b5; }
 
-.fa-mail:hover {
-  color: #d8ce43; }
-
 .fa-github:hover {
-  color: black; }
+  color: whitesmoke; }
 
 @media (max-width: 720px) {
   .navigation {

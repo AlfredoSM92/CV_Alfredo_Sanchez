@@ -2,32 +2,38 @@
 footer{
     margin-top: 1.5rem;
     @include flex(column, center, center, wrap);
-    // background-color: map-get($map: $colors, $key: back-color);
+    background-color: map-get($map: $colors, $key: back-color);
     border-width: .4rem .4rem 0 .4rem;
     border-style: solid;
     border-color: map-get($map: $colors, $key: border-color);
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
     padding: 1rem;
     text-align: center;
-    .fa-brands, .fa-envelope{
+    .fa-brands{
         font-size: 2.6rem;
         color: map-get($map: $colors, $key: secondary-color);
-        margin: 1rem;
+        margin-right: 2rem;
     }
 }
 
+.fa-envelope {
+    width: 2.6rem;
+    filter:grayscale(100);
+    margin-top: 1rem;
+}
+
+.fa-envelope:hover{
+    filter: grayscale(0)
+}
+
 .fa-square-whatsapp:hover{
-    color: green;
+    color: rgb(2, 168, 2)
 }
 
 .fa-linkedin:hover{
     color: #0077b5
 }
 
-.fa-mail:hover {
-    color: rgb(216, 206, 67);
-}
-
 .fa-github:hover {
-    color: black;
+    color: whitesmoke;
 }
