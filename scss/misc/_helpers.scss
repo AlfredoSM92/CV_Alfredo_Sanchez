@@ -39,7 +39,9 @@ body {
 }
 
 .contact_link {
-    color:map-get($map: $colors, $key: secondary-color);
+    color:map-get($map: $colors, $key: text-color);
+    font-weight: 400;
+    font-style: italic;
 }
 
 .break_line {

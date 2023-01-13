@@ -64,7 +64,9 @@ body {
   text-align: center; }
 
 .contact_link {
-  color: #444444; }
+  color: #2c2c2c;
+  font-weight: 400;
+  font-style: italic; }
 
 .break_line {
   margin: 1.5rem 0; }
@@ -98,7 +100,8 @@ body {
       text-decoration: none;
       padding: .5rem; }
       .header_info h2 a {
-        color: #444444;
+        color: #2c2c2c;
+        font-weight: 400;
         font-style: italic;
         text-decoration: underline; }
     .header_info img {

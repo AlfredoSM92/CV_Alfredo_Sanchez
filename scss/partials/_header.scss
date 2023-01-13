@@ -18,7 +18,8 @@
             @include font($text_base, 1.8rem, 500, none);
             padding: .5rem;
             & a {
-                color: map-get($map: $colors, $key: secondary-color);
+                color: map-get($map: $colors, $key: text-color);
+                font-weight: 400;
                 font-style: italic;
                 text-decoration: underline;
             }
